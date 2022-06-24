@@ -17,6 +17,16 @@
 #include <windows.h>
 #include <iostream>
 #include <string>
+
+#ifdef _WIN32
+    #define LOAD(path) LoadLibrary(path)
+    #define GetProc(handle,str) GetProcAddress(handle,str)
+    #define path_str "C:\\Users\\xzhao\\Desktop\\Docker_test\\src\\Control_dll_Gen.dll"
+#else 
+    #define LOAD(path) dlopen(path)
+    #define GetProc(handle,str) dlsym(handle,str)
+    #define path_str "/usr/src/Control_dll_Gen.dll"
+#endif
 /* %%%-SFUNWIZ_wrapper_includes_Changes_END --- EDIT HERE TO _BEGIN */
 #define u_width 1
 #define y_width 1
@@ -33,7 +43,7 @@
  * Output function
  *
  */
-void Control_Dyer_Outputs_wrapper(const real_T *xm,
+void Linux_NoInput_Outputs_wrapper(const real_T *xm,
 			const real_T *dxm,
 			const real_T *ddxm,
 			const real_T *xs,
@@ -68,8 +78,11 @@ void Control_Dyer_Outputs_wrapper(const real_T *xm,
                                         double,double,double,double,double,
                                         double,double,double,int,int,int,double,
                                                     double[]);
-    HINSTANCE hGetProcIDDLL = LoadLibrary("D:\\Enc_3\\Dyer_dll\\Control_dll_Gen\\x64\\Debug\\Control_dll_Gen.dll");
-    f_check apply = (f_check)GetProcAddress(hGetProcIDDLL, "control");
+    //HINSTANCE hGetProcIDDLL = LoadLibrary("test/Control_dll_Gen.dll");
+    //C:\\Users\\xzhao\\Desktop\\Docker_test\\src
+    //f_check apply = (f_check)GetProcAddress(hGetProcIDDLL, "control");
+    HINSTANCE hGetProcIDDLL = LOAD(path_str);
+    f_check apply = (f_check)GetProc(hGetProcIDDLL, "control");
 
     int bit_length_IN = bit_length[0];
     int rhoIN = rho[0];
