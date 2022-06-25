@@ -12,9 +12,9 @@ Encryption Homomorphic
 
 The controller architecture and motor signals are processed in homomorphic encryption to avoid data leaking. The homomorphic encryption is written in C++ due to the large data size. They are performed in a single equation of “control” that returns an array of master and slave torque, as shown in X1. The control equation includes all the subfunctions and runs the control scheme. The subfunctions have the format of [&] to access data to other subfunctions, as shown in X2.  
 
-![image](https://user-images.githubusercontent.com/107379730/175787018-4063cc50-936f-492a-a23a-62c76abf9049.png)  X1. Control equation
+![image](https://user-images.githubusercontent.com/107379730/175787018-4063cc50-936f-492a-a23a-62c76abf9049.png)                     X1. Control equation
 
-![image](https://user-images.githubusercontent.com/107379730/175787025-4a1805e9-8207-404b-a866-254e34cd3d00.png)  X2. Subfunction format
+![image](https://user-images.githubusercontent.com/107379730/175787025-4a1805e9-8207-404b-a866-254e34cd3d00.png)                     X2. Subfunction format
 
 Since the Simulink S-function only has compile version of C++14, the control scheme has to be exported to dll that are compiled in C++20. To export in DLL, the control scheme was Extern “C” was used to ensure that the function names are un-mangled, so that the binary files are exported with unchanged names. 
 
