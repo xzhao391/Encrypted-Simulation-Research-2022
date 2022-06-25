@@ -6,7 +6,12 @@ FMPy is a free Python library to simulate Functional Mock-up Units (FMUs) that s
  
 ![Screenshot](NoInput_Model.png)
 
-X1. No-Input Model Simulation  
+<p align="center">
+    X1. No-Input Model Simulation 
+</p> 
  
 ![Screenshot](Input_Model.png)
-X2. Constant Input Model Simulation
+
+<p align="center">
+    X2. Input Model Simulation 
+</p> 
