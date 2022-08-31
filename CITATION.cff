@@ -1,0 +1,28 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: ' Encrypted Simulation Research 2022'
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Xiaofeng
+    family-names: Zhao
+    email: zhaoxiaofeng@gatech.edu
+    affiliation: >-
+      George W. Woodruff School of Mechanical
+      Engineering, Georgia Institute of Technology
+  - given-names: Shane
+    family-names: Kosieradzki
+    email: skosieradzki3@gatech.edu
+    affiliation: >-
+      George W. Woodruff School of Mechanical
+      Engineering, Georgia Institute of Technology
+  - given-names: Jun
+    family-names: Ueda
+    email: jueda3@gatech.edu
+    affiliation: >-
+      George W. Woodruff School of Mechanical
+      Engineering, Georgia Institute of Technology
