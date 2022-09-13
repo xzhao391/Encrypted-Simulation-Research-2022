@@ -7,6 +7,9 @@ For the teleopeation system, the dll implements the controller. Inside the contr
 
 $$\tau_m=(m_{m}-m_{ms}) \ddot{x}_m + k_p (x_s-x_m) +
 k_d (\dot{x}_s-\dot{x}_m)+ 0.9 \mu_m sign (\dot{x}_m)$$
+
+$$\tau_s=(m_{s}-m_{ms}) \ddot{x}_s + k_p (x_m-x_s)+
+k_d (\dot{x}_m-\dot{x}_s)+ 0.9 \mu_s sign (\dot{x}_s)$$
      
 This section also applies the SHE approach to the Duffing oscillator that includes a third degree of polynomials term. The duffing equation is represented by 
 
