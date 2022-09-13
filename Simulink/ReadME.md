@@ -12,18 +12,18 @@ The equation is implemented in Simulink as shown in Fig. 1.
 </p>
 
 <p align="center">
-Fig. 1 Simulink implementation of Teleoperation system dynamics
+Fig. 1: Simulink implementation of Teleoperation system dynamics
 </p>
 
 /* --------------------------------------------------------------------- Duffing Oscillator --------------------------------------------------------------- */
-The duffing equation is represented by $$\ddot x + \delta \dot x + \alpha x + \beta x ^{3}= \gamma \cos(\omega t)$$, where the coefficients $\delta, \alpha, \beta, \gamma, \omega$  denote system damping, linear stiffness, amount of non-linearity in the restoring force, amplitude of the driving force, and angular frequency of the force. The equation is implemented in Simulink as shown in Fig. 2.
+The duffing equation is represented by $$\ddot x + \delta \dot x + \alpha x + \beta x ^{3}= \gamma \cos(\omega t)$$, where the coefficients $\delta, \alpha, \beta, \gamma, \omega$  denote system damping, linear stiffness, amount of non-linearity in the restoring force, amplitude of the driving force, and angular frequency of the force. The discretized equation is implemented in Simulink as shown in Fig. 2.
 
 <p align="center">
 <img src="https://github.com/xzhao391/Encrypted-Simulation-Research-2022/blob/main/Picture/Duffing_Simulink.png" width="600" height="400">
 </p>
 
 <p align="center">
-Fig. 2 Simulink implementation of Duffing equations
+Fig. 2: Simulink implementation of Duffing equations
 </p>
 
 /* ----------------------------------------------------------------- Simulink/C++ Interface ------------------------------------------------------------ */
