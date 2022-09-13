@@ -30,7 +30,7 @@ The duffing equation is represented by $$\ddot x + \delta \dot x + \alpha x + \b
 The Duffing equation is discretized with a step time $T_s$ for the current time $t=k T_s (k=0,1,2,\cdots$) and encrypted by using SHE, as shown in Fig. 3. The main purpose of the encryption is to treat the parameters, $\alpha, \beta, \gamma, \delta$, as well as $\ddot x$, in the ciphertext. Compared to teleoperation encryption, more powerful sets of security parameters are needed due to the triple multiplications. 
 
  <p align="center">
- <img src="https://github.com/xzhao391/Encrypted-Simulation-Research-2022/blob/main/Picture/duffing-fmu_Ueda.png" width="600" height="180">
+ <img src="https://github.com/xzhao391/Encrypted-Simulation-Research-2022/blob/main/Picture/duffing-fmu_Ueda.png" width="600" height="900">
 </p>
 
 <p align="center">
