@@ -6,7 +6,7 @@ The plant dynamics is modeled as:
      $$m_m \ddot{x}_m + b_m \dot{x}_m + \mu_m sign (\dot{x}_m) = \tau_m + f_m$$
      $$m_s \ddot{x}_s + b_s \dot{x}_s + \mu_s sign (\dot{x}_s) = \tau_s - f_s$$
 The equation is implemented in Simulink as shown in Fig. 1 
-<img src="https://github.com/xzhao391/Encrypted-Simulation-Research-2022/blob/main/Picture/Duffing_Simulink.png" width="324" height="324">
+<img src="https://github.com/xzhao391/Encrypted-Simulation-Research-2022/blob/main/Picture/Duffing_Simulink.png" width="512" height="512">
 
 ![alt text](https://github.com/xzhao391/Encrypted-Simulation-Research-2022/blob/main/Picture/Duffing_Simulink.png width="150" height="280")
 
