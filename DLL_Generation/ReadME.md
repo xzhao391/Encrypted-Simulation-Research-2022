@@ -17,7 +17,7 @@ damping, linear stiffness, amount of non-linearity in the restoring force, ampli
 The equation is discretized with a step time $T_s$ for the current time $t=k T_s (k=0,1,2,\cdots$) and encrypted by using SHE. The main purpose of the encryption is to treat the parameters, $\alpha, \beta, \gamma, \delta$, as well as $\ddot x$, in the ciphertext. Compared to teleoperation encryption, more powerful sets of security parameters are needed due to the triple multiplications. 
 
 $$Enc (\ddot x_k) = Enc(\gamma) \otimes Enc(\cos(\omega t))\\
-&\oplus Enc(-\delta) \otimes Enc(\dot x_k)
+\oplus Enc(-\delta) \otimes Enc(\dot x_k)
 \oplus Enc(-\alpha) \otimes Enc(x_k)
 \oplus Enc(-\beta) \otimes Enc(x_k^{3})$$
         
