@@ -4,8 +4,9 @@ The goal of the research is to establish functional mockup units (FMU) co-simula
 
 The modular structure of FMU may be used in conjunction with the aforementioned cypher-interface, to create an encrypted cyber-physical testbed. A particular FMU system is paired with different implementations of cypher.dll to test which cypher/securityparameters are best compatible with the particular system. An example of this workflow can be seen in Fig. 1. 
 
-
-<img src="https://github.com/xzhao391/Encrypted-Simulation-Research-2022/blob/main/Picture/testbed-flow.png" width="600" height="400">
+<p align="center">
+<img src="https://github.com/xzhao391/Encrypted-Simulation-Research-2022/blob/main/Picture/testbed-flow.png" width="500" height="200">
+</p>
 
 <p align="center">
 Fig. 1 Simulink implementation of Teleoperation system dynamics
