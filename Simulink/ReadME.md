@@ -1,3 +1,5 @@
+This section introduced the implementation of nonlinear dynamics of the plants by using Simulink, the interface between the Simulink S function and Dll, and how to export FMU from Simulink. 
+
 With the complexity of the encrypted control scheme, it is more efficient to write the control scheme in C++ and access it by Simulink through the S-function block. The S-function builder integrates a C/C++ code by building a C MEX S-function. Inside the s function, the S-function will load the previously compiled dll. _stdcall that tells the compiler the rules for setting up the stack, pushing arguments, and getting a return value. LoadLibrary()/dlopen() is used to load the library, GetProcAddress()/dlsym() is used to load the symbols and call the function.
 
      
