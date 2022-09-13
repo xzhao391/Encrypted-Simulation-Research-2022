@@ -32,7 +32,7 @@ With the complexity of the encrypted control scheme, it is more efficient to wri
      
 In a real-time environment, generic API calls can be unacceptably slow, especially when many solution steps are involved. The code generator can speed up S-functions in standalone applications that it generates by embedding user-written algorithms within auto-generated functions, rather than indirectly calling S-functions via the generic API. This form of optimization is called inlining. TLC inlines S-functions, resulting in faster, optimized code[1]. To inline the S-function, clicks on the generating Wrapper TLC while building the S-function, as shown in X2.  
 
-/* ------------------------------------------------------------------------- FMU Export -------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- FMU Export ----------------------------------------------------------------- */
 To export the Simulink into FMU, in the Model settings, check the fixed-step solver and change the system target file to ert_shrlib, which generates a shared library target. Then, it is ready to export to FMU after setting the time step and initial conditions
 
 
