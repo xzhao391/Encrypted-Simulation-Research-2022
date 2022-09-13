@@ -21,5 +21,5 @@ Testbed staging: Construct system from FMU composition, and select the cypher to
  </p>
 
 <p align="center">
-Fig. 1 FMU/Cypher test-bed: System simulation is constructed by linking FMUs chosen from a remote repository. A cypher is then selected to be tested for compatibility with the given FMU system.
+Fig. 1: FMU/Cypher test-bed: System simulation is constructed by linking FMUs chosen from a remote repository. A cypher is then selected to be tested for compatibility with the given FMU system.
 </p>
