@@ -34,7 +34,19 @@ The Duffing equation is discretized with a step time $T_s$ for the current time 
 </p>
 
 <p align="center">
-Fig. 1: All parameters in the duffing equations were encrypted and ran in FMU, where $F=\cos(\omega t)$ is the forcing function, and $x_k = x(k T_s)$.
+Fig. 2: All parameters in the duffing equations were encrypted and ran in FMU, where $F=\cos(\omega t)$ is the forcing function, and $x_k = x(k T_s)$.
 </p>
 
+/* -------------------------------------------------------------------- Teleoperation System ----------------------------------------------------------- */
+Inside the controller, the SHE algorithm encrypts the dynamics outputs from the local and remote plants including: accelerations, velocities, displacements, as well as gains. Then, the controller will do the computation in encryption and output the decrypted forces back to the plants. The teleoperation system consists of three separate FMUs: local plant, controller, and remote plant.
+
+Each component is exported from the Simulink model and run in FMPy. During the FMU simulation, the components in the co-simulation establish communications between each other. A component publishes a specific output variable that is subscribed by other components as input. Two cycles exist in the simulations: feedback from the controller to the local plant and from the remote plant to the controller. Therefore, both plants and controllers have the same priority but cannot run in parallel.
+
+ <p align="center">
+ <img src="https://github.com/xzhao391/Encrypted-Simulation-Research-2022/blob/main/Picture/teleop-fmu_Ueda.png" width="900" height="600">
+</p>
+
+<p align="center">
+Fig. 3:  The teleoperation system consists of three separate FMU: local plant, controller, and remote plant. The controller makes calls to cypher.dll to perform cryptographic operations..
+</p>
 
