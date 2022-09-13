@@ -6,7 +6,8 @@ The modular structure of FMU may be used in conjunction with the aforementioned 
 
 <p align="center">
 <img src="https://github.com/xzhao391/Encrypted-Simulation-Research-2022/blob/main/Picture/testbed-flow.png" width="600" height="150">
-
+(a) Testbed Flow: Evaluation scheme to find successful security parameters, where ε is the measured error, εT the error tolerance, τ the measured simulation-cycle time, and τT the simulation-cycle time tolerance.
+ 
  <img src="https://github.com/xzhao391/Encrypted-Simulation-Research-2022/blob/main/Picture/testbed-staging.png" width="600" height="180">
 </p>
 
