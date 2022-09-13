@@ -6,13 +6,20 @@ The modular structure of FMU may be used in conjunction with the aforementioned 
 
 <p align="center">
 <img src="https://github.com/xzhao391/Encrypted-Simulation-Research-2022/blob/main/Picture/testbed-flow.png" width="600" height="150">
+</p>
 
+<p align="center">
  (a) Testbed Flow: Evaluation scheme to find successful security parameters, where ε is the measured error, εT the error tolerance, τ the measured simulation-cycle time, and τT the simulation-cycle time tolerance.
+ </p>
  
+ <p align="center">
  <img src="https://github.com/xzhao391/Encrypted-Simulation-Research-2022/blob/main/Picture/testbed-staging.png" width="600" height="180">
 </p>
 
+<p align="center">
+Testbed staging: Construct system from FMU composition, and select the cypher to be tested. Here the “Test Bed” blockrefers to Fig. 1a.
+ </p>
 
 <p align="center">
-Fig. 1 Simulink implementation of Teleoperation system dynamics
+Fig. 1 FMU/Cypher test-bed: System simulation is constructed by linking FMUs chosen from a remote repository. A cypher is then selected to be tested for compatibility with the given FMU system.
 </p>
