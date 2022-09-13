@@ -6,7 +6,10 @@ The modular structure of FMU may be used in conjunction with the aforementioned 
 
 <p align="center">
 <img src="https://github.com/xzhao391/Encrypted-Simulation-Research-2022/blob/main/Picture/testbed-flow.png" width="600" height="150">
+
+ <img src="https://github.com/xzhao391/Encrypted-Simulation-Research-2022/blob/main/Picture/testbed-staging.png" width="600" height="150">
 </p>
+
 
 <p align="center">
 Fig. 1 Simulink implementation of Teleoperation system dynamics
