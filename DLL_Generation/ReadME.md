@@ -1,3 +1,4 @@
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 This section introduces the implementation of Dyer's SHE to control/autonomus system using C++ and shows how to generate .dll from Cmake. 
 
 The dll can implement different control/autonomus system while separting them from the FMU’s internal operation. This architecture enables the user
