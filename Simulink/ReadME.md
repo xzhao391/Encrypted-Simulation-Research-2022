@@ -6,9 +6,11 @@ The plant dynamics is modeled as:
      $$m_m \ddot{x}_m + b_m \dot{x}_m + \mu_m sign (\dot{x}_m) = \tau_m + f_m$$
      $$m_s \ddot{x}_s + b_s \dot{x}_s + \mu_s sign (\dot{x}_s) = \tau_s - f_s$$
 The equation is implemented in Simulink as shown in Fig. 1 
-<img src="https://github.com/xzhao391/Encrypted-Simulation-Research-2022/blob/main/Picture/Duffing_Simulink.png" width="750" height="500">
 
-![alt text](https://github.com/xzhao391/Encrypted-Simulation-Research-2022/blob/main/Picture/Duffing_Simulink.png width="150" height="280")
+<p align="center">
+<img src="https://github.com/xzhao391/Encrypted-Simulation-Research-2022/blob/main/Picture/Duffing_Simulink.png" width="600" height="400">
+</p>
+
 
 With the complexity of the encrypted control scheme, it is more efficient to write the control scheme in C++ and access it by Simulink through the S-function block. The S-function builder integrates a C/C++ code by building a C MEX S-function. Inside the s function, the S-function will load the previously compiled dll. _stdcall that tells the compiler the rules for setting up the stack, pushing arguments, and getting a return value. LoadLibrary()/dlopen() is used to load the library, GetProcAddress()/dlsym() is used to load the symbols and call the function.
 
