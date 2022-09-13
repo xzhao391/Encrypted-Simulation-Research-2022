@@ -10,7 +10,7 @@ k_d (\dot{x}_s-\dot{x}_m)+ 0.9 \mu_m sign (\dot{x}_m)$$
 $$\tau_s=(m_{s}-m_{ms}) \ddot{x}_s + k_p (x_m-x_s)+
 k_d (\dot{x}_m-\dot{x}_s)+ 0.9 \mu_s sign (\dot{x}_s)$$
 
-/* ------------------------------ Example text ------------------------------ */        
+/* --------------------------------------------------------------------- Duffing Oscillator --------------------------------------------------------------- */        
 
 This section also applies the SHE approach to the Duffing oscillator that includes a third degree of polynomials term. The duffing equation is represented by
 $$\ddot x + \delta \dot x + \alpha x + \beta x ^{3}= \gamma \cos(\omega t)$$, where the coefficients $\delta, \alpha, \beta, \gamma, \omega$  denote system
