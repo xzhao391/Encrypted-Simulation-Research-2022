@@ -1,4 +1,4 @@
-This section also applies the SHE approach to the Duffing oscillator that includes a third degree of polynomials term. The duffing equation is represented by
+This section applies the SHE approach to the Duffing oscillator that includes a third degree of polynomials term. The duffing equation is represented by
 $$\ddot x + \delta \dot x + \alpha x + \beta x ^{3}= \gamma \cos(\omega t)$$, where the coefficients $\delta, \alpha, \beta, \gamma, \omega$  denote system
 damping, linear stiffness, amount of non-linearity in the restoring force, amplitude of the driving force, and angular frequency of the force. The main purpose of the encryption is to treat the parameters, $\alpha, \beta, \gamma, \delta$, as well as $\ddot x$, in ciphertext. 
 
