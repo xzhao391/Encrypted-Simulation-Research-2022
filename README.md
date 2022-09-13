@@ -30,7 +30,7 @@ The duffing equation is represented by $$\ddot x + \delta \dot x + \alpha x + \b
 The Duffing equation is discretized with a step time $T_s$ for the current time $t=k T_s (k=0,1,2,\cdots$) and encrypted by using SHE, as shown in Fig. 3. The main purpose of the encryption is to treat the parameters, $\alpha, \beta, \gamma, \delta$, as well as $\ddot x$, in the ciphertext. Compared to teleoperation encryption, more powerful sets of security parameters are needed due to the triple multiplications. 
 
  <p align="center">
- <img src="https://github.com/xzhao391/Encrypted-Simulation-Research-2022/blob/main/Picture/duffing-fmu_Ueda.png" width="900" height="600">
+ <img src="https://github.com/xzhao391/Encrypted-Simulation-Research-2022/blob/main/Picture/duffing-fmu_Ueda.png" width="800" height="500">
 </p>
 
 <p align="center">
@@ -43,7 +43,7 @@ Inside the controller, the SHE algorithm encrypts the dynamics outputs from the 
 Each component is exported from the Simulink model and run in FMPy. During the FMU simulation, the components in the co-simulation establish communications between each other. A component publishes a specific output variable that is subscribed by other components as input. Two cycles exist in the simulations: feedback from the controller to the local plant and from the remote plant to the controller. Therefore, both plants and controllers have the same priority but cannot run in parallel.
 
  <p align="center">
- <img src="https://github.com/xzhao391/Encrypted-Simulation-Research-2022/blob/main/Picture/teleop-fmu_Ueda.png" width="900" height="600">
+ <img src="https://github.com/xzhao391/Encrypted-Simulation-Research-2022/blob/main/Picture/teleop-fmu_Ueda.png" width="800" height="500">
 </p>
 
 <p align="center">
