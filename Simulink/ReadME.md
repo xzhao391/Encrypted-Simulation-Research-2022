@@ -7,10 +7,9 @@ The plant dynamics is modeled as:
      $$m_s \ddot{x}_s + b_s \dot{x}_s + \mu_s sign (\dot{x}_s) = \tau_s - f_s$$
 The equation is implemented in Simulink as shown in Fig. 1 
 
-<p align="center">
+<align="center">
 <img src="https://github.com/xzhao391/Encrypted-Simulation-Research-2022/blob/main/Picture/Teleoperation_Simulink.png" width="600" height="400">
-     
-                                                 Fig. 1: Simulink implementation of Teleoperation System 
+Fig. 1: Simulink implementation of Teleoperation System 
 </p>
 
 
