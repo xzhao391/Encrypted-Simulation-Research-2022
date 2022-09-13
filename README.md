@@ -25,6 +25,7 @@ Fig. 1: FMU/Cypher test-bed: System simulation is constructed by linking FMUs ch
 </p>
 
 /* --------------------------------------------------------------------- Duffing Oscillator --------------------------------------------------------------- */
+
 The duffing equation is represented by $$\ddot x + \delta \dot x + \alpha x + \beta x ^{3}= \gamma \cos(\omega t)$$, where the coefficients $\delta, \alpha, \beta, \gamma, \omega$  denote system damping, linear stiffness, amount of non-linearity in the restoring force, amplitude of the driving force, and angular frequency of the force.
 
 The Duffing equation is discretized with a step time $T_s$ for the current time $t=k T_s (k=0,1,2,\cdots$) and encrypted by using SHE, as shown in Fig. 3. The main purpose of the encryption is to treat the parameters, $\alpha, \beta, \gamma, \delta$, as well as $\ddot x$, in the ciphertext. Compared to teleoperation encryption, more powerful sets of security parameters are needed due to the triple multiplications. 
@@ -38,6 +39,7 @@ Fig. 2: All parameters in the duffing equations were encrypted and ran in FMU, w
 </p>
 
 /* -------------------------------------------------------------------- Teleoperation System ----------------------------------------------------------- */
+
 Inside the controller, the SHE algorithm encrypts the dynamics outputs from the local and remote plants including: accelerations, velocities, displacements, as well as gains. Then, the controller will do the computation in encryption and output the decrypted forces back to the plants. The teleoperation system consists of three separate FMUs: local plant, controller, and remote plant.
 
 Each component is exported from the Simulink model and run in FMPy. During the FMU simulation, the components in the co-simulation establish communications between each other. A component publishes a specific output variable that is subscribed by other components as input. Two cycles exist in the simulations: feedback from the controller to the local plant and from the remote plant to the controller. Therefore, both plants and controllers have the same priority but cannot run in parallel.
