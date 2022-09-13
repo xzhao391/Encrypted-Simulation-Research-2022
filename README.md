@@ -34,5 +34,7 @@ The Duffing equation is discretized with a step time $T_s$ for the current time 
 </p>
 
 <p align="center">
-Fig. 1: All parameters in the duffing equations were encrypted and ran in FMU, where $F=\cos(\omega t)$ is the forcing function, and $$x_k = x(k T_s).
+Fig. 1: All parameters in the duffing equations were encrypted and ran in FMU, where $F=\cos(\omega t)$ is the forcing function, and $x_k = x(k T_s)$.
 </p>
+
+
