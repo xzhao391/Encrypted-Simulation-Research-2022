@@ -24,7 +24,7 @@ Testbed staging: Construct system from FMU composition, and select the cypher to
 Fig. 1: FMU/Cypher test-bed: System simulation is constructed by linking FMUs chosen from a remote repository. A cypher is then selected to be tested for compatibility with the given FMU system.
 </p>
 
-/* --------------------------------------------------------------- Duffing Oscillator --------------------------------------------------------- */
+/* ----------------------------------------------------------------- Duffing Oscillator ----------------------------------------------------------- */
 
 The duffing equation is represented by $$\ddot x + \delta \dot x + \alpha x + \beta x ^{3}= \gamma \cos(\omega t)$$, where the coefficients $\delta, \alpha, \beta, \gamma, \omega$  denote system damping, linear stiffness, amount of non-linearity in the restoring force, amplitude of the driving force, and angular frequency of the force.
 
@@ -38,7 +38,7 @@ The Duffing equation is discretized with a step time $T_s$ for the current time 
 Fig. 2: All parameters in the duffing equations were encrypted and ran in FMU, where $F=\cos(\omega t)$ is the forcing function, and $x_k = x(k T_s)$.
 </p>
 
-/* -------------------------------------------------------------- Teleoperation System ----------------------------------------------------- */
+/* ---------------------------------------------------------------- Teleoperation System ------------------------------------------------------- */
 
 Inside the controller, the SHE algorithm encrypts the dynamics outputs from the local and remote plants including: accelerations, velocities, displacements, as well as gains. Then, the controller will do the computation in encryption and output the decrypted forces back to the plants. The teleoperation system consists of three separate FMUs: local plant, controller, and remote plant.
 
